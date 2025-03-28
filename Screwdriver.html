@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>螺絲起子辨識系統</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .swiper-wrapper-box {
+      width: 100%;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" ><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="index.html#skills"><i class="bi bi-hdd-stack navicon"></i><span>Skills</span></a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="index.html#achievements"><i class="bi bi-trophy navicon"></i><span>Achievements</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html" style="font-size: 18px;">Home</a></li>
+            <li><a href="index.html#portfolio" style="font-size: 18px;">Portfolio</a></li>
+          </ol>
+        </nav>
+        <h1 style="margin-top: 50px; font-size: 2.5rem; font-weight: bold;">
+          螺絲起子辨識系統
+        </h1>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 mt-4">
+
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="swiper-wrapper-box">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": "auto",
+                    "navigation": {
+                      "nextEl": ".swiper-button-next",
+                      "prevEl": ".swiper-button-prev"
+                    },
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/Screwdriver/螺絲起子.png" alt="">
+                    <figcaption class="text-muted">工業相機取像圖</figcaption>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/Screwdriver/原圖.jpg" alt="">
+                    <figcaption class="text-muted">手機取像圖</figcaption>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/Screwdriver/訓練.png" alt="">
+                    <figcaption class="text-muted">訓練結果</figcaption>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/Screwdriver/AI.jpg" alt="">
+                    <figcaption class="text-muted">AI辨識</figcaption>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/Screwdriver/AOI.png" alt="">
+                    <figcaption class="text-muted">AOI辨識</figcaption>
+                  </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 portfolio-description-wrapper d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- 背景與目的 -->
+            <div class="portfolio-description">
+              <h2>背景與目的</h2>
+              <p>
+                螺絲起子種類繁多，包含不同頭型與尺寸，若依賴人工分類容易出錯且耗時。本專案針對橫向擺放的螺絲起子，設計一套自動辨識系統，結合影像處理與深度學習模型，以提升分類準確率並實現標準化管理流程。
+              </p>
+            </div>
+            <!-- 實作內容 -->
+            <div class="portfolio-description">
+              <h2>實作內容</h2>
+              <p>
+                系統以相機擷取高解析影像，經影像處理後辨識頭型並量測尺寸特徵，實現 8 種螺絲起子的自動分類：
+              </p>
+              <ul>
+                <li><strong>影像擷取：</strong>使用高解析相機搭配遠心鏡頭，確保幾何量測穩定</li>
+                <li><strong>頭型辨識：</strong>導入深度學習模型區分十字、梅花、一字等類型</li>
+                <li><strong>尺寸判斷：</strong>利用 AOI 技術量測輪廓寬度與長度進行分級</li>
+                <li><strong>資料應用：</strong>分類結果可用於出貨檢查、自動倉儲或機械手臂夾持定位</li>
+              </ul>
+            </div>
+            <!-- 成果與應用 -->
+            <div class="portfolio-description">
+              <h2>成果與應用</h2>
+              <p>
+                本系統能有效分類多種螺絲起子頭型與尺寸，支援橫向擺放輸送條件，應用於工具組裝、出貨檢驗與自動化分揀流程，具備進一步導入 AI 優化精度與流程整合的潛力。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Steven Lin</h3>
+      <p>專注於工業自動化與 AI 開發的軟體工程師，擁有跨領域整合與實作經驗，致力於打造高效穩定的技術解決方案。 </p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://pda.104.com.tw/profile/share/5fiPqPDswDROWzBzXIXjW2tHHPgUm3SL" target="_blank"><i class="bi bi-briefcase"></i></a>
+        <a href="mailto:a21170000@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="container">
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      const swiperElement = document.querySelector(".portfolio-details-slider.swiper");
+      const swiperConfigEl = swiperElement.querySelector(".swiper-config");
+      const swiperConfig = JSON.parse(swiperConfigEl.textContent.trim());
+
+      swiperConfig.autoplay.disableOnInteraction = false;
+      const swiper = new Swiper(swiperElement, swiperConfig);
+
+      const video = document.getElementById("goldfoil-video");
+
+      if (video) {
+        swiper.on("slideChange", function () {
+          const slides = swiper.slides;
+          slides.forEach((slide) => {
+            const video = slide.querySelector("video");
+            if (video && !slide.classList.contains("swiper-slide-active")) {
+              video.pause();
+              video.currentTime = 0;
+            }
+          });
+
+          const activeSlide = swiper.slides[swiper.activeIndex];
+          const videoInActiveSlide = activeSlide.querySelector("video");
+
+          if (videoInActiveSlide) {
+            swiper.autoplay.stop();
+          } else {
+            swiper.autoplay.start();
+          }
+        });
+
+        video.addEventListener("play", function () {
+          swiper.autoplay.stop();
+        });
+
+        video.addEventListener("ended", function () {
+          swiper.slideNext();
+          swiper.autoplay.start();
+        });
+
+        video.addEventListener("pause", function () {
+          swiper.autoplay.start();
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>

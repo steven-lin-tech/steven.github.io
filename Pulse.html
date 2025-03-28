@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>脈搏血氣診斷</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .swiper-wrapper-box {
+      width: 100%;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="index.html#skills"><i class="bi bi-hdd-stack navicon"></i><span>Skills</span></a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="index.html#achievements"><i class="bi bi-trophy navicon"></i><span>Achievements</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html" style="font-size: 18px;">Home</a></li>
+            <li><a href="index.html#portfolio" style="font-size: 18px;">Portfolio</a></li>
+          </ol>
+        </nav>
+        <h1 style="margin-top: 50px; font-size: 2.5rem; font-weight: bold;">
+          脈搏血氣診斷
+        </h1>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 mt-4">
+
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="swiper-wrapper-box">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": "auto",
+                    "navigation": {
+                      "nextEl": ".swiper-button-next",
+                      "prevEl": ".swiper-button-prev"
+                    },
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/Pulse/pulseui.png" alt="">
+                    <figcaption class="text-muted">網頁首頁</figcaption>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/Pulse/pulse.png" alt="">
+                    <figcaption class="text-muted">網頁蒐集頁面</figcaption>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/Pulse/pulseui3.png" alt="">
+                    <figcaption class="text-muted">網頁數據顯示頁面</figcaption>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/Pulse/原始訊號.png" alt="">
+                    <figcaption class="text-muted">原始訊號</figcaption>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/Pulse/FFT.png" alt="">
+                    <figcaption class="text-muted">FFT</figcaption>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <video preload="none" id="pulse-video" autoplay muted controls playsinline width="100%">
+                      <source src="assets/img/Pulse/脈搏.mp4" type="video/mp4">
+                      您的瀏覽器不支援 video 標籤。
+                    </video>
+                    <figcaption class="text-muted">數據蒐集影片</figcaption>
+                  </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 portfolio-description-wrapper d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- 背景與目的 -->
+            <div class="portfolio-description">
+              <h2>背景與目的</h2>
+              <p>
+                傳統中醫透過脈診了解人體氣血狀況，但在現代難以量化與科學分析。本專案目標為建構一套數位脈診系統，透過 PPG（光體積變化描記法）感測脈搏訊號，並結合訊號分析與 Web 技術，實現脈搏的可視化、儲存與生理資訊推估。
+              </p>
+            </div>
+            <!-- 實作內容 -->
+            <div class="portfolio-description">
+              <h2>實作內容</h2>
+              <p>
+                系統整合硬體感測、資料分析與前後端展示技術，達成即時訊號處理與脈搏狀態呈現：
+              </p>
+              <ul>
+                <li><strong>訊號擷取：</strong>透過 Arduino 擷取 PPG 訊號並傳輸至電腦</li>
+                <li><strong>訊號處理：</strong>使用 Python 套件進行 FFT 頻譜分析推估心率與狀態</li>
+                <li><strong>資料儲存：</strong>透過 MariaDB 保存脈搏原始資料與分析結果</li>
+                <li><strong>網頁介面：</strong>使用 ASP.NET + WebAPI 顯示數據與即時圖表</li>
+              </ul>
+            </div>
+          
+          
+            <!-- 成果與應用 -->
+            <div class="portfolio-description">
+              <h2>成果與應用</h2>
+              <p>
+                使用者可透過網頁即時觀測脈搏變化與分析結果，系統具有可擴充性，未來可搭配生理模型進行體質分類、疲勞監測或遠距照護應用，並具備與醫療介面整合潛力。
+              </p>
+          
+              <a href="https://ppgcollect.ddns.net:6230/" class="btn btn-outline-primary mt-3" target="_blank">
+                <i class="bi bi-box-arrow-up-right me-1"></i>前往網站
+              </a>
+            </div>
+          
+          </div>
+          
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Steven Lin</h3>
+      <p>專注於工業自動化與 AI 開發的軟體工程師，擁有跨領域整合與實作經驗，致力於打造高效穩定的技術解決方案。 </p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://pda.104.com.tw/profile/share/5fiPqPDswDROWzBzXIXjW2tHHPgUm3SL" target="_blank"><i class="bi bi-briefcase"></i></a>
+        <a href="mailto:a21170000@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="container">
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      const swiperElement = document.querySelector(".portfolio-details-slider.swiper");
+      const swiperConfigEl = swiperElement.querySelector(".swiper-config");
+      const swiperConfig = JSON.parse(swiperConfigEl.textContent.trim());
+
+      swiperConfig.autoplay.disableOnInteraction = false;
+      const swiper = new Swiper(swiperElement, swiperConfig);
+
+      const video = document.getElementById("pulse-video");
+
+      if (video) {
+        swiper.on("slideChange", function () {
+          const slides = swiper.slides;
+          slides.forEach((slide) => {
+            const video = slide.querySelector("video");
+            if (video && !slide.classList.contains("swiper-slide-active")) {
+              video.pause();
+              video.currentTime = 0;
+            }
+          });
+
+          const activeSlide = swiper.slides[swiper.activeIndex];
+          const videoInActiveSlide = activeSlide.querySelector("video");
+
+          if (videoInActiveSlide) {
+            swiper.autoplay.stop();
+          } else {
+            swiper.autoplay.start();
+          }
+        });
+
+        video.addEventListener("play", function () {
+          if (swiper && swiper.autoplay.running) {
+            swiper.autoplay.stop();
+          }
+        });
+
+
+        video.addEventListener("ended", function () {
+          swiper.slideNext();
+          swiper.autoplay.start();
+        });
+
+        video.addEventListener("pause", function () {
+          if (video.ended === false) {
+            swiper.autoplay.start();
+          }
+        });
+
+      }
+    });
+  </script>
+
+</body>
+
+</html>
